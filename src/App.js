@@ -12,9 +12,9 @@ const App = () => {
         <BrowserRouter>
                 <div className="App">
                     <Switch>
-                        <Route path='/' exact component={Login} />
+                        <Route path='/kairos' exact component={Login} />
                         <ProtectedRoute
-                            path='/page'
+                            path='/kairos/page'
                             component={Page}
                         />
                         <Route path='*' component={() => '404 NOT FOUND'} />

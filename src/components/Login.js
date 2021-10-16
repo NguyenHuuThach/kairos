@@ -21,7 +21,7 @@ export const Login = (props) => {
         if (details.username === dataUser.username && details.password === dataUser.password) {
             console.log('okkk')
             Auth.login(() => {
-                history.push('/page')
+                history.push('/kairos/page')
             })
         } else {
             console.log('fail')
