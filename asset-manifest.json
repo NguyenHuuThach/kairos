@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kairos/static/css/main.d6adeef3.chunk.css",
+    "main.js": "/kairos/static/js/main.63632ea7.chunk.js",
+    "main.js.map": "/kairos/static/js/main.63632ea7.chunk.js.map",
+    "runtime-main.js": "/kairos/static/js/runtime-main.6e159ab8.js",
+    "runtime-main.js.map": "/kairos/static/js/runtime-main.6e159ab8.js.map",
+    "static/js/2.a5786eff.chunk.js": "/kairos/static/js/2.a5786eff.chunk.js",
+    "static/js/2.a5786eff.chunk.js.map": "/kairos/static/js/2.a5786eff.chunk.js.map",
+    "index.html": "/kairos/index.html",
+    "static/css/main.d6adeef3.chunk.css.map": "/kairos/static/css/main.d6adeef3.chunk.css.map",
+    "static/js/2.a5786eff.chunk.js.LICENSE.txt": "/kairos/static/js/2.a5786eff.chunk.js.LICENSE.txt",
+    "static/media/image30.png": "/kairos/static/media/image30.528898b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e159ab8.js",
+    "static/js/2.a5786eff.chunk.js",
+    "static/css/main.d6adeef3.chunk.css",
+    "static/js/main.63632ea7.chunk.js"
+  ]
+}
