@@ -5,7 +5,7 @@ import Auth from '../Auth'
 export const Login = (props) => {
     const [details, setDetails] = useState({ username: '', password: '' })
     const [err, setErr] = useState(false)
-    const [dataUser, setdataUser] = useState({ username: '', password: '' })
+    const [dataUser, setdataUser] = useState(null)
     
     
     const history = useHistory()
@@ -13,18 +13,17 @@ export const Login = (props) => {
     useEffect(async () => {
         const respone = await fetch('https://6164054db55edc00175c1cc9.mockapi.io/v1/auth/1')
         const data = await respone.json()
-        setdataUser(data)
+        const { username, password } = data
+        setdataUser({ username, password })
     }, [])
 
     const submitHandler = e => {
         e.preventDefault()
         if (details.username === dataUser.username && details.password === dataUser.password) {
-            console.log('okkk')
             Auth.login(() => {
                 history.push('/kairos/page')
             })
         } else {
-            console.log('fail')
             setDetails({username: '', password: ''})
             setErr(true)
         }
