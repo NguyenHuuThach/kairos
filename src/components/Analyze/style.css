@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    min-height: 635px;
+  }
+  
+  .analyze-left {
+    position: relative;
+    width: 35%;
+  }
+  
+  .analyze-right {
+    position: relative;
+    width: 65%;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.analyze-wraper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.big-text {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 76px;
+    letter-spacing: 0.01em;
+    color: #181949;
+    text-align: left;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.filter-items-wraper {
+    display: flex;
+    align-items: center;
+    background: #181949;
+    font-size: 14px;
+    line-height: 16px;
+    color: #CFE5FF;
+    padding: 20px 0;
+    position: relative;
+
+}
+
+.filter-items {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    position: absolute;
+    left: 376px;
+}
+
+.filter-items > div {
+    cursor: pointer;
+}
+
+.filter-items > div::after {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOCAwLjIyMjlIMEw0IDYuMjIyOUw4IDAuMjIyOVoiIGZpbGw9IiNDRkU1RkYiLz4KPC9zdmc+Cg==');
+    width: 8px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+.analyze-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+
+.analyze-content-item {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.analyze-content-item-text {
+    cursor: pointer;
+    padding: 40px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    border-bottom: 1.5px solid transparent;
+    opacity: 0.5;
+}
+
+.analyze-content-item-text:hover {
+    border-bottom: 1.5px solid #CFE5FF;
+    opacity: 1;
+}
+
+.analyze-content-statistics {
+    display: flex;
+    align-items: baseline;
+    gap: 110px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.analyze-content-statistics-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analyze-content-statistics-item-text {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    color: #CFE5FF;
+}
+
+.navbar-right-wraper {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    background: transparent;
+    font-size: 14px;
+    line-height: 19px;
+    position: absolute;
+    top: 65px;
+    left: 45px;
+}
+
+.navbar-left-wraper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 101px;
+    align-items: baseline;
+    background: transparent;
+    font-size: 14px;
+    line-height: 19px;
+    position: absolute;
+    right: 45px;
+    top: 56px;
+}
+
+.navbar-left-wraper, .navbar-right-wraper  > div {
+    cursor: pointer;
+}
+
+.navbar-logo {
+    width: 176px;
+    height: 30px;
+}
+
+.navbar-home {
+    display: flex;
+    font-weight: bold;
+}
+.navbar-home::before {
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTU2MTUgMTMuMTgwNEgxMi40MTczIiBzdHJva2U9IiMxODE5NDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMS45NzI3OCAxMS4xNTU1QzEuOTcyNzggNi40NDgxNCAyLjQ4NjA2IDYuNzc2NjggNS4yNDg5NCA0LjIxNDQzQzYuNDU3NzYgMy4yNDEzNiA4LjMzODY5IDEuMzYzNzcgOS45NjI5OCAxLjM2Mzc3QzExLjU4NjQgMS4zNjM3NyAxMy41MDUgMy4yMzIxNiAxNC43MjQ3IDQuMjE0NDNDMTcuNDg3NSA2Ljc3NjY4IDE4IDYuNDQ4MTQgMTggMTEuMTU1NUMxOCAxOC4wODMyIDE2LjM2MjMgMTguMDgzMiA5Ljk4NjM5IDE4LjA4MzJDMy42MTA0NCAxOC4wODMyIDEuOTcyNzggMTguMDgzMiAxLjk3Mjc4IDExLjE1NTVaIiBzdHJva2U9IiMxODE5NDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+}

@@ -1,0 +1,23 @@
+.banner-wraper-pink {
+    text-align: center;
+    color: #181949;
+    font-size: 24px;
+    line-height: 33px;
+    background-color: #FFD1E8;
+    padding: 20px 0;
+}
+
+.banner-bold-text {
+    font-weight: bold;
+}
+
+.banner-wrapper-white {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #181949;
+    padding: 42px 0;
+}

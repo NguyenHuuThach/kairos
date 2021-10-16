@@ -1,0 +1,16 @@
+.rectangle {
+    height: 405.75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+}
+
+.rectangle-gray {
+    background: #F4F4F4;
+}
+
+.rectangle-white {
+    background: #FFFFFF;
+}

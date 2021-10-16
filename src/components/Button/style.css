@@ -1,0 +1,23 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-kairos {
+    background-color: #181949;
+}
+
+.btn-medium {
+    width: 100px;
+    height: 32px;
+}
