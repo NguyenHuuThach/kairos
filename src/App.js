@@ -1,20 +1,26 @@
 import React from 'react'
 
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Page } from './components/Page'
 import { Login } from './components/Login'
-
+import { ProtectedRoute } from './ProtectedRoute'
 
 
 const App = () => {
     return (
-        <Router>
-            <div className="App">
-                <Route path='/' exact component={Login} />
-                <Route path='/page' component={Page} />
-            </div>
-        </Router>
+        <BrowserRouter>
+                <div className="App">
+                    <Switch>
+                        <Route path='/' exact component={Login} />
+                        <ProtectedRoute
+                            path='/page'
+                            component={Page}
+                        />
+                        <Route path='*' component={() => '404 NOT FOUND'} />
+                    </Switch>
+                </div>
+        </BrowserRouter>
     );
 }
 
